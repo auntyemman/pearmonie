@@ -51,6 +51,7 @@ git clone
 
 6. **Access the application:**
 - Open a web browser and navigate to `http://localhost:3001` to access the application.
+- Postman : https://identity.postman.com/continue?state=87032453eb7d174eb2526e17b7599956360987bb408f80966a7f2566ef0d8d5d
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
