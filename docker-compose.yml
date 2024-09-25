@@ -1,0 +1,19 @@
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+      - DATABASE_URI=${DATABASE_URI}
+      - JWT_SECRET=${JWT_SECRET}
+      - REDIS_HOST=${REDIS_HOST}
+      - REDIS_PASSWORD=${REDIS_PASSWORD}
+      - REDIS_PORT=${REDIS_PORT}
+      - OPENAI_ORG_ID=${OPENAI_ORG_ID}
+      - OPENAI_PROJECT_ID={OPENAI_PROJECT_ID}
+      - OPENAI_KEY=${OPENAI_KEY}
